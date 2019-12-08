@@ -6,7 +6,7 @@ from pylsl import StreamInlet, resolve_byprop
 import seaborn as sns
 from threading import Thread
 from .constants import VIEW_BUFFER, VIEW_SUBSAMPLE, LSL_SCAN_TIMEOUT, LSL_EEG_CHUNK
-
+matplotlib.use("TkAgg")
 
 def view(window, scale, refresh, figure, backend, version=1):
     matplotlib.use(backend)
